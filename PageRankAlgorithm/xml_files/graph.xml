@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="graph.xsd">
+    <node name="A"/>
+    <node name="B">
+        <link>C</link>
+    </node>
+    <node name="C">
+        <link>B</link>
+    </node>
+    <node name="D">
+        <link>A</link>
+        <link>B</link>
+    </node>
+    <node name="E">
+        <link>F</link>
+        <link>D</link>
+        <link>B</link>
+    </node>
+    <node name="F">
+        <link>B</link>
+        <link>E</link>
+    </node>
+    <node name="G">
+        <link>E</link>
+        <link>B</link>
+    </node>
+    <node name="H">
+        <link>B</link>
+        <link>E</link>
+    </node>
+    <node name="I">
+        <link>B</link>
+        <link>E</link>
+    </node>
+
+    <node name="L">
+        <link>E</link>
+    </node>
+    <node name="M">
+        <link>E</link>
+    </node>
+</graph>
